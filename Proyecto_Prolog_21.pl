@@ -19,7 +19,7 @@ calcular_mano_dealer(Carta_dealer, Mano_dealer) :-
     sumar_cartas([Carta_dealer], Mano_dealer).
 
 decidir_accion(Mano_jugador, Mano_dealer, Decision) :-
-    (Mano_jugador < 17 -> Decision = "Pegar";
+    (Mano_jugador < 17 -> Decision = "pedirr";
      Mano_jugador == 17 -> decidir_17(Mano_dealer, Decision);
      Mano_jugador > 17 -> Decision = "Plantarse").
 
